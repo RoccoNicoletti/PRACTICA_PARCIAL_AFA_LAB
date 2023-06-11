@@ -1,4 +1,4 @@
-public class Futbolistas extends Seleccion{
+public class Futbolistas extends Seleccion implements Jugar{
 
     private int numCamisetas;
     private String puesto;
@@ -56,7 +56,7 @@ public class Futbolistas extends Seleccion{
     }
 
     public void jugarPartido() {
-        // Lógica para jugar un partido
+
         System.out.println("El futbolista juega el partido.");
     }
 

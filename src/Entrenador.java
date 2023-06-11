@@ -1,4 +1,4 @@
-public class Entrenador extends Seleccion{
+public class Entrenador extends Seleccion implements Jugar, PrepararEntrenamiento{
 
     private String sistemaJuego;
     private String estilo;

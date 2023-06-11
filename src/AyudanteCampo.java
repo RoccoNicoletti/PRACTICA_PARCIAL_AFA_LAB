@@ -1,4 +1,4 @@
-public class AyudanteCampo extends Seleccion{
+public class AyudanteCampo extends Seleccion implements Jugar, PrepararEntrenamiento{
 
     private String metodologia;
 
