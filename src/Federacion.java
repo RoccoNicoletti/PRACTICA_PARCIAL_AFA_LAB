@@ -55,6 +55,14 @@ public class Federacion <T>  {
         this.cantidadCopas = cantidadCopas;
     }
 
+    public HashSet<T> getListado() {
+        return listado;
+    }
+
+    public void setListado(HashSet<T> listado) {
+        this.listado = listado;
+    }
+
     ///metodos
 
     public void agregarMiembros(T miembroPlantel) throws CantidadMaxFutbolistas, CapacidadMaximaEntrenador{
@@ -142,7 +150,7 @@ public class Federacion <T>  {
 
 
     }
-    
+
     @Override
     public String toString() {
         return "Federacion{" +
