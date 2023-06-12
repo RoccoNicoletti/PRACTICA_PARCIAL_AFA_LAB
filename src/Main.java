@@ -6,7 +6,8 @@ import java.time.LocalDate;
 public class Main {
     public static void main(String[] args) {
 
-        Futbolistas futbolista1 = new Futbolistas("Lionel", "Messi", 35, 10, "DELANTERO");
+
+        Futbolistas futbolista1 = new Futbolistas("Lionel", "Messi", 35, 10, Futbolistas.Puesto.DELANTERO);
         AyudanteCampo ayudante = new AyudanteCampo("Tomi", "Rosado", 10, "kineo");
         Entrenador entrenador2 = new Entrenador("Coco", "Basile", 80, "4-3-3", "OFENSIVO");
         Masajistas masaje = new Masajistas("Rocco", "Nicoletti", 30, "decrack", 10);

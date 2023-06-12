@@ -1,20 +1,29 @@
 public class Futbolistas extends Seleccion implements Jugar{
 
     private int numCamisetas;
-    private String puesto;
+    private Puesto puesto;
 
     ///constructores
  public Futbolistas(){}
 
-    public Futbolistas(int numCamisetas, String puesto) {
+    public Futbolistas(int numCamisetas, Puesto puesto) {
         this.numCamisetas = numCamisetas;
         this.puesto = puesto;
     }
 
-    public Futbolistas(String nombre, String apellido, int edad, int numCamisetas, String puesto) {
+    public Futbolistas(String nombre, String apellido, int edad, int numCamisetas, Puesto puesto) {
         super(nombre, apellido, edad);
         this.numCamisetas = numCamisetas;
         this.puesto = puesto;
+    }
+
+    public enum Puesto{
+
+     DEFENSA,
+     ARQUERO,
+     MEDIOCAMPISTA,
+
+        DELANTERO;
     }
 
     ///getters y setters
@@ -27,11 +36,11 @@ public class Futbolistas extends Seleccion implements Jugar{
         this.numCamisetas = numCamisetas;
     }
 
-    public String getPuesto() {
+    public Puesto getPuesto() {
         return puesto;
     }
 
-    public void setPuesto(String puesto) {
+    public void setPuesto(Puesto puesto) {
         this.puesto = puesto;
     }
 
